@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Themes/theme01/asstes/css/01-index.css",
+    "inputFile": "Themes/theme01/asstes/css/01-index.scss"
+  },
+  {
+    "outputFile": "Themes/theme01/asstes/slick/slick/slick-theme.css",
+    "inputFile": "Themes/theme01/asstes/slick/slick/slick-theme.scss"
+  }
+]

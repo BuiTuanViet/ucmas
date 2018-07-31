@@ -1,0 +1,1753 @@
+﻿body {
+    @mixin font-rbt {
+        font-family: 'Roboto', sans-serif;
+    }
+    h3{
+        text-transform:uppercase;
+    }
+    //Màu chữ
+    $red: #e31e24;
+    $black: #333333;
+    $write: #bac0cb;
+    $blue: #153a67;
+    $gray: #666666;
+    $bg-footer: #0e2036;
+    $bg-blue: #153a67;
+    $bg-red: #e41e26;
+
+    .fa {
+        margin-right: 5px;
+    }
+
+    .cb {
+        clear: both;
+    }
+
+    #header {
+        p {
+            padding-top: 8px;
+        }
+
+        .top {
+            color: #ffffff;
+            background: $bg-red;
+            @include font-rbt;
+            height: 36px;
+
+            .left {
+                width: 17% !important;
+            }
+
+            .right {
+                text-align: right;
+                   width: 33% !important;
+                input {
+                    border: none;
+                    margin-top: 8px;
+                    background: none;
+                }
+
+                ::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+
+        .bottom {
+            height: 0;
+
+            .row {
+                padding-top: 10px;
+
+                .center {
+                    .menu {
+                        display: inline-block;
+                        margin-top: 35px;
+
+                        ul {
+                            -webkit-padding-start: 0px;
+
+                            li {
+                                list-style-type: none;
+                                display: inline-block;
+
+                                a {
+                                    padding: 15px 18px 20px 0;
+                                    font-family: 'Roboto';
+                                    font-size: 15px;
+                                    font-weight: bold;
+                                    font-stretch: condensed;
+                                    text-transform: uppercase;
+                                    text-decoration: none;
+                                    color: $black;
+
+                                    &:hover {
+                                        color: $red;
+                                    }
+                                }
+
+                                .curent {
+                                    color: $red;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .nhuongquyen {
+                    padding: 10px 10px;
+                    border: $red 1px solid;
+                    border-radius: 3px;
+                    position: relative;
+                    float: right;
+                    margin-right: -10px;
+                    margin-top: -45px;
+                    text-decoration: none;
+                    color: $red;
+                    font-weight: bold;
+                    transition:0.8s;
+                    &:hover {
+                        box-shadow:0 2px 20px -2px $bg-red;
+                        background: $bg-red;
+                        color: #fff;
+                        box-shadow: 0 2px 10px -2px $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    #slide {
+        height: 100%;
+
+        .hhh {
+            margin-bottom: 0;
+
+            .slick-next:before {
+                content: "\f054";
+                font-size: 20px;
+                color: #ffffff;
+                font: normal normal normal 14px/1 FontAwesome;
+            }
+
+            .slick-next {
+                top: 50%;
+                right: 10%;
+                background-color: #aeadb2;
+                width: 40px;
+                height: 40px;
+
+                &:hover {
+                    background-color: #49aa48;
+                }
+            }
+
+            .slick-prev:before {
+                content: "\f053";
+                font-size: 20px;
+                color: #ffffff;
+                font: normal normal normal 14px/1 FontAwesome;
+            }
+
+            .slick-prev {
+                top: 50%;
+                left: 10%;
+                z-index: 999;
+                background-color: #aeadb2;
+                width: 40px;
+                height: 40px;
+
+                &:hover {
+                    background-color: #849884;
+                }
+            }
+
+            .slick-dots {
+                li {
+                    button:before {
+                        font-size: 30px;
+                        color: #0466af;
+                    }
+                }
+            }
+
+            .img {
+                img {
+                    width: 100%;
+                    height: auto;
+                    max-width: 1900px;
+                    background-image: none;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+
+            .content {
+                z-index: 999;
+                text-align: right;
+                margin-top: 0%;
+                right: 20%;
+                top: 32%;
+                margin-top: -30em;
+
+                a {
+                    font-size: 71px;
+                    @include font-rbt;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+
+                .border {
+                    border-bottom: 3px solid #ffffff;
+                    width: 72px;
+                    float: right;
+                }
+
+                p {
+                    font-size: 38px;
+                    color: $black;
+                    @include font-rbt;
+                    font-stretch: condensed;
+                    margin: 0;
+                }
+
+                .color {
+                    color: $red;
+                    font-size: 46px;
+                }
+            }
+        }
+    }
+
+    #number {
+        background: $bg-blue;
+        height: 120px;
+
+        .item {
+            padding-top: 25px;
+
+            .left {
+                padding: 8px;
+                border: #6f7173 1px solid;
+                border-radius: 3px;
+                text-align: center;
+
+                p {
+                    font-size: 18px;
+                    margin: 0;
+                    border-bottom: 1px solid $write;
+                    color: #ffffff;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+
+            .right {
+                color: #ffffff;
+                font-size: 17px;
+                @include font-rbt;
+                font-stretch: condensed;
+            }
+        }
+    }
+
+    #GioiThieu {
+        padding-top: 75px;
+        padding-bottom: 30px;
+
+        .left {
+            h4 {
+                color: $red;
+                font-size: 22px;
+                @include font-rbt;
+                font-stretch: condensed;
+            }
+
+            .slogan {
+                @include font-rbt;
+                font-stretch: condensed;
+                font-size: 40px;
+                color: $blue;
+            }
+
+            p {
+                @include font-rbt;
+                font-stretch: condensed;
+                font-size: 15px;
+                color: $gray;
+                padding: 10px 0;
+            }
+
+            a {
+                padding: 18px 30px 15px 30px;
+                border: $bg-blue 1px solid;
+                color: $blue;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 12px;
+                border-radius: 3px;
+                line-height: 75px;
+                transition:0.8s;
+
+                &:hover {
+                    box-shadow:0 2px 20px -2px #153a67;
+                    background: $bg-blue;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .right {
+            img {
+                margin-top: -35px;
+            }
+        }
+    }
+
+    #video {
+        background:url('img//Bgr-01.png') center no-repeat;
+
+        background-size: cover;
+
+
+        .content {
+            padding-bottom: 2%;
+            z-index: 999;
+            top: 20%;
+            text-align: center;
+            position: relative;
+            padding-top: 5%;
+
+            p {
+                color: #fff;
+                @include font-rbt;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .Big {
+                font-size: 28px;
+                font-weight: bold;
+                font-stretch: condensed;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    #pick {
+        padding-top: 100px;
+
+        h3 {
+            font-size: 40px;
+            color: $blue;
+            font-weight: bold;
+            font-stretch: condensed;
+            text-align: center;
+        }
+
+        .border {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        .item {
+            .left {
+                float: left;
+                font-size: 100px;
+                color: #ebebeb;
+            }
+
+            .right {
+                padding-left: 5px;
+                margin-top: 35px;
+
+                .Big {
+                    color: $red;
+                    @include font-rbt;
+                    font-weight: bold;
+                    font-stretch: condensed;
+                }
+
+                p {
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    #ChuongTrinh {
+        height: 100%;
+
+        .top {
+            padding-top: 120px;
+
+            h3 {
+                @include font-rbt;
+                font-size: 40px;
+                color: $blue;
+                font-weight: bold;
+                font-stretch: condensed;
+                text-align: center;
+            }
+
+            .border {
+                text-align: center;
+                padding-bottom: 25px;
+            }
+
+            .title {
+                text-align: center;
+                @include font-rbt;
+                font-size: 15px;
+                color: #999;
+                padding-bottom: 30px;
+            }
+        }
+
+        .bottom {
+            margin-bottom: 100px;
+            text-align: center;
+            .row{
+                margin:0;
+            }
+           .khungAnh{
+                   max-height: 222px;
+                 max-width: 555px;
+              
+           }
+           .khungAnh:before{
+                   padding-bottom: 40.43%;
+           }
+            a{
+                padding-top: 20px;
+               
+                color: #999;
+                @include font-rbt;
+                margin-bottom: 30px;
+                text-decoration:none;
+              
+            }
+
+            .Big {
+                padding-top: 30px;
+                color: $blue;
+                @include font-rbt;
+                font-size: 18px;
+                font-weight: bold;
+                font-stretch: condensed;
+                padding-bottom: 0;
+                  line-height:60px;
+                  &:hover{
+                      color:$red;
+                  }
+
+            }
+
+           .click {
+                padding: 10px 20px;
+                border: 1px solid $blue;
+                color: $blue;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 3px;
+                text-decoration: none;
+                transition:0.8s;
+                  line-height:80px;
+                &:hover {
+                    background: $bg-blue;
+                    color: #fff;
+                    box-shadow: 0 2px 20px -2px $blue;
+                }
+            }
+        }
+    }
+
+    #ThanhTuu {
+        margin-top: 5em;
+        padding-bottom: 2em;
+        background:  url('img//bg-02.jpg') center no-repeat;
+        background-size: cover;
+
+        .content {
+            position: relative;
+
+            .top {
+                padding-top: 3%;
+
+                .Big {
+                    @include font-rbt;
+                    font-size: 40px;
+                    color: #fff;
+                    font-weight: bold;
+                    font-stretch: condensed;
+                    text-align: center;
+                }
+
+                p {
+                    @include font-rbt;
+                    font-size: 15px;
+                    color: $write;
+                    text-align: center;
+                }
+            }
+
+            .bottom {
+                .item {
+                    p {
+                        color: $write;
+                        @include font-rbt;
+                        font-weight: bold;
+                        padding-top: 20px;
+                        padding-left: 20px;
+                        float: left;
+                        font-stretch: condensed;
+                        font-size: 16px;
+                    }
+
+                    .Big {
+                        color: #ffffff;
+                        float: left;
+                        font-size: 40px;
+                        font-weight: bold;
+                        padding-top: 0px;
+                        padding-left: 0px;
+                    }
+
+                    .border {
+                        border-bottom: 1px solid $bg-red;
+                        width: 40px;
+                        padding-top: 20%;
+                    }
+                }
+            }
+        }
+    }
+
+    #HuanLuyenVien {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+        .slick-dots {
+            li {
+                background: #d6d6d6;
+                width: 10px;
+                height: 10px;
+
+                button {
+                    display: none;
+                }
+
+                button:before {
+                    font-size: 30px;
+                    color: #0466af;
+                    content: "";
+                }
+            }
+
+            .slick-active {
+                background: $bg-red;
+            }
+        }
+
+        .DoiNgu {
+            .top {
+
+                h3 {
+                    font-size: 40px;
+                    color: $blue;
+                    font-weight: bold;
+                    font-stretch: condensed;
+                    text-align: center;
+                }
+
+                .border {
+                    text-align: center;
+                    padding-bottom: 25px;
+                }
+            }
+
+            .bottom {
+
+                .name {
+                    padding: 25px 10px 3px 10px;
+                    border-top: 5px solid $blue;
+                    background: #f5f5f5;
+
+                    a {
+                        color: $black;
+                        font-size: 16px;
+                        font-weight: bold;
+                        font-stretch: condensed;
+                    }
+                }
+
+                p {
+                    color: $gray;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .item {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+   
+        .viet {
+            overflow: hidden;
+            position: absolute;
+            bottom: -229px;
+            background-color: $bg-blue;
+            transition: 0.5s;
+            opacity: 0.96;
+            margin-top: -55%;
+            width: 90%;
+             padding: 15px;
+            .name1 {
+                a {
+                    color: #ffffff;
+                    font-size: 16px;
+                    @include font-rbt;
+                    font-weight: bold;
+                    font-stretch: condensed;
+                    text-decoration: none;
+                }
+
+                p {
+                    color: #3075ca;
+                    font-size: 12px;
+                    padding: 10px 0px 10px 0px;
+                    @include font-rbt;
+                }
+            }
+
+            .content {
+                p {
+                    color: $write;
+                    @include font-rbt;
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+
+
+
+        .item:hover > .viet {
+            bottom: 0px;
+        }
+
+        .item:hover > .name {
+        }
+    }
+
+    #CamNhan {
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background:  url('img//bgrCamNhan.jpg') no-repeat center;
+
+        .feel {
+            /*.slick-prev{
+                display:none;
+            } 
+            .slick-next:before{
+                display:none;
+            }*/
+            button {
+                display: none !important;
+            }
+
+            .slick-dots {
+                li {
+                    background: #b3272a;
+                    width: 10px;
+                    height: 10px;
+
+                    button {
+                        display: none !important;
+                    }
+
+                    button:before {
+                        font-size: 30px;
+                        color: #0466af;
+                        content: "";
+                    }
+                }
+
+                .slick-active {
+                    background: #e47174;
+                }
+            }
+        }
+
+        .top {
+            text-align: center;
+            
+
+            h3 {
+                padding-bottom:20px;
+                color: #FFF;
+                font-size: 40px;
+                font-weight: bold;
+                @include font-rbt;
+                font-stretch: condensed;
+            }
+        }
+
+        .bottom {
+            .name {
+                .left {
+                    float: left;
+                }
+
+                .right {
+                    float: left;
+
+                    p {
+                        font-size: 14px;
+                        @include font-rbt;
+                        color: #FFF;
+                        padding-left: 20px;
+                    }
+
+                    .Big {
+                        color: #FFF;
+                        padding-top: 18px;
+                        font-size: 17px;
+                        font-weight: bold;
+                        @include font-rbt;
+                        font-stretch: condensed;
+                    }
+                }
+            }
+
+            .border {
+                width: 30PX;
+                height: 30px;
+                background:  url('img//AROWTOP.png') no-repeat center;
+                padding-left: 70px;
+            }
+
+            .desc {
+                margin-top: -6px;
+                padding: 10px;
+                border: 1px dashed #ea8d90;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    #new {
+        padding-top: 3%;
+        padding-bottom: 3%;
+
+        .top {
+            text-align: center;
+            padding-top: 3%;
+
+            h3 {
+                color: $blue;
+                font-size: 40px;
+                font-weight: bold;
+                @include font-rbt;
+                font-stretch: condensed;
+            }
+        }
+
+        .bottom {
+            padding-top: 3%;
+
+            .item {
+                /*&:hover>.khungAnhCrop,.desc{
+                 box-shadow: 0 2px 10px -2px $blue;*/
+                /*}*/
+                .border{ 
+                    box-shadow: 0 0 8px $write;
+                   
+                    transition:0.8s;
+                      &:hover {
+                    box-shadow:  2px 19px 44px 8px #e5e9ef;
+                              }
+                }
+            }
+
+            .item:hover > .Big {
+                color: $red;
+            }
+
+            .khungAnh {
+                max-height: 162px;
+
+
+                .khungAnhCrop {
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .khungAnh:before {
+                padding-bottom: 61.43%;
+            }
+
+            .desc {
+              
+                box-sizing: border-box;
+                padding: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                .Big {
+                    color: $black;
+                    font-size: 16PX;
+                    font-weight: bold;
+                    @include font-rbt;
+                    font-stretch: condensed;
+
+                    &:hover {
+                        color: $red;
+                        text-decoration: none;
+                    }
+                }
+                /*&:hover{
+                 box-shadow: 0 2px 10px -2px $blue;*/
+                /*}*/
+            }
+
+            p {
+                padding-top: 20px;
+                @include font-rbt;
+                font-size: 15px;
+                color: $gray;
+            }
+        }
+    }
+
+    #Action {
+        .top {
+            background:  url('img//bgrAcTion.jpg') center no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding-top: 2%;
+            height: 100%;
+
+            h3 {
+                color: #ffffff;
+                font-size: 40px;
+                font-weight: bold;
+                @include font-rbt;
+                font-stretch: condensed;
+            }
+
+            .border {
+                text-align: center;
+                padding-bottom: 25px;
+            }
+
+            p {
+                color: $write;
+                @include font-rbt;
+                font-size: 15px;
+            }
+        }
+
+        .center {
+
+            .item {
+                float: left;
+                margin: auto;
+                width: 20%;
+
+                .khungAnh {
+                    max-width: 380px;
+                    max-height: 328px;
+
+                    .khungAnhCrop {
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            padding-top: 19%;
+            padding-bottom: 3%;
+
+            .item {
+                float: left;
+
+                a {
+                    padding: 15px 16px 15px 20px;
+                }
+            }
+        }
+    }
+
+    #footer {
+        background:  url('img//bgrFotter.jpg') no-repeat center;
+        background-size: cover;
+
+        .left, .center, .fanpage {
+            padding-top: 5%;
+            padding-bottom: 10%;
+
+            .title {
+                font-size: 20px;
+                @include font-rbt;
+                color: #ffffff;
+                font-weight: bold;
+                font-stretch: condensed;
+                padding-bottom: 3%;
+            }
+
+            p {
+                color: $write;
+                @include font-rbt;
+                font-size: 15px;
+                padding-top: 8px;
+
+                a {
+                    color: $red;
+                    text-decoration: none;
+                }
+            }
+
+            .Big {
+                text-transform: uppercase;
+            }
+        }
+
+        .left {
+            .call {
+                background: #336b9c;
+                padding: 5px 40px 5px 9px;
+                position: absolute;
+
+                .left {
+                    float: left;
+                    padding: 0;
+                }
+
+                .right {
+                    float: left;
+
+                    p {
+                        padding-left: 10px;
+                        margin-bottom: 0;
+                    }
+
+                    .Big {
+                        padding-top: 0;
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: $write;
+                    }
+                }
+            }
+        }
+
+        .center {
+            .menu {
+                ul {
+                    -webkit-padding-start: 0px;
+
+                    li {
+                        list-style-type: none;
+                        line-height: 30px;
+
+                        a {
+                            color: $write;
+                            @include font-rbt;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: #5481d4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .fanpage {
+            padding-bottom: 7%;
+
+            .title {
+                padding-bottom: 5%;
+            }
+
+            a {
+                color: $red;
+                font-size: 30px;
+
+                &:hover {
+                    color: #337ab7;
+                }
+            }
+        }
+    }
+
+    #coppyright {
+        background-color: $bg-footer;
+        height: 50px;
+
+        p {
+            font-size: 15px;
+            color: $write;
+            padding-top: 15px;
+        }
+
+        .right {
+            text-align: right;
+        }
+    }
+
+    .chat {
+        background: $bg-footer;
+        border-radius: 3px;
+        z-index: 99999;
+        width: 14%;
+        HEIGHT: 5%;
+        padding: 17px 0px 14px 32px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        color: #ffffff;
+
+        i {
+            float: left;
+            margin-right: 10px;
+        }
+
+        p {
+            float: left;
+            margin-right: 20px;
+        }
+    }
+
+    .hotro {
+        color: #ffffff;
+        background: $bg-red;
+        -webkit-transform: rotate(-90deg);
+        position: fixed;
+        z-index: 99999;
+        border-radius: 3px;
+        top: 50%;
+        height: 40px;
+        right: -79px;
+        width: 200px;
+        padding: 6px;
+
+        p {
+            float: left;
+            margin-right: 3px;
+            font-size: 16px;
+            font-stretch: condensed;
+            font-weight: bold;
+            text-transform: uppercase;
+            @include font-rbt;
+        }
+    }
+    /*
+    Có nhi?u ?? phân gi?i theo các màn hình t? smartphone, tablet, pc
+    320, 375, 414, 480, 568, 601, 640, 667, 736, 768, 800, 906, 1024, 1200, 1280, 1360, 1366 tr? lên
+    L?y chu?n nh? nh?t là 320 cho tr??ng h?p smartphone d?ng d?c r?i chia theo kho?ng
+/*================??i v?i T?t Thành code b?n pc tr??c, vì v?y s? vi?t ng??c t? to v? bé nh? sau================*/
+    /*css m?c ??nh dành cho tr??ng h?p pc 1360, 1366px tr? lên*/
+    @media (max-width:1359px) {
+        /*B?t ??u t? 1200 tính t??ng ?ng v?i tr??ng h?p l?n h?n tablet - b?t ??u c?a PC - th??ng là 4 ho?c 5 c?t*/
+    }
+
+    @media (max-width:1199px) {
+        /*B?t ??u t? 992 tính t??ng ?ng v?i tr??ng h?p tablet quay ngang - th??ng là 3 ho?c 4 c?t*/
+        .none-tb {
+            display: none;
+        }
+
+        #header {
+            .top {
+                p {
+                    font-size: 12px;
+                }
+
+                .right {
+                    text-align: right;
+                    width: 33% !important;
+                }
+            }
+
+            .bottom {
+                .center {
+                    .menu {
+                        display: none !important;
+                    }
+
+                    .dropdown {
+                        display: block !important;
+                        float: right;
+                        margin-top: 1em;
+
+                        .btn {
+                            color: #ffffff;
+                            text-align: center;
+                            font-weight: bold;
+                            background: $bg-red;
+                            padding: 9px 13px;
+                        }
+
+                        .dropdown-menu {
+                            right: -27px !important;
+                            top: 175%;
+                            left: auto;
+
+                            li {
+
+                                a {
+                                    line-height: 34px;
+                                    font-size: 18px;
+                                    @include font-rbt;
+                                    border-bottom: 1px solid $bg-red;
+                                    font-weight: bold;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+
+                    .nhuongquyen {
+                        float: left;
+                        margin-left: 43em;
+                        margin-top: 13px;
+                    }
+                }
+            }
+        }
+
+        #slide {
+            .slick-prev {
+                top: 50% !important;
+                left: 5% !important;
+            }
+
+            .slick-next {
+                top: 50% !important;
+                right: 5% !important;
+            }
+
+            .content {
+                margin-top: -16em !important;
+                padding-right: 90px;
+
+                .title {
+                    a {
+                        font-size: 33px !important;
+                    }
+                }
+
+                p {
+                    font-size: 18px !important;
+                }
+            }
+        }
+
+        #number {
+            .item {
+                width: 50% !important;
+            }
+        }
+
+        #GioiThieu {
+            padding-top: 3% !important;
+            padding-bottom: 3% !important;
+
+            .left {
+                width: 100% !important;
+            }
+        }
+
+        #video {
+            .content {
+                padding-top: 2% !important;
+
+                .Big {
+                    font-size: 28px !important;
+                    padding-top: 0px;
+                }
+
+                p {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        #pick {
+        }
+
+        #ChuongTrinh {
+            .top {
+                padding-top: 0;
+            }
+
+            .bottom {
+
+                .img {
+                    width: 95%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        #ThanhTuu {
+            .img {
+                img {
+                    height: 20em;
+                }
+            }
+
+            .bottom {
+                .border {
+                    padding-top: 28% !important;
+                }
+            }
+        }
+
+        #HuanLuyenVien {
+            .slick-prev {
+                display: none !important;
+            }
+
+            .slick-next {
+                display: none !important;
+            }
+
+            .item {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .viet {
+                margin-top: -77%;
+                width: 88%;
+                bottom: -249px;
+
+            }
+        }
+
+        #CamNhan {
+            .slick-prev {
+                display: none !important;
+            }
+
+            .slick-next {
+                display: none !important;
+            }
+
+            .top {
+                h3 {
+                    padding-top: 0;
+                }
+            }
+
+            .row {
+                margin: 0 !important;
+            }
+
+            .desc {
+                margin-right: 0 !important;
+            }
+        }
+
+        #new {
+            .top {
+                padding-top: 0;
+            }
+
+            .khungAnh {
+                max-height: 134px !important;
+            }
+        }
+
+        #coppyright {
+            height: 100%;
+
+            p {
+                padding: 0;
+            }
+
+            .left {
+                width: 100% !important;
+            }
+
+            .right {
+                text-align: left;
+            }
+        }
+    }
+
+
+    @media (max-width:991px) {
+        /*B?t ??u t? 768 tính t??ng ?ng v?i tr??ng h?p tablet d?ng d?c - th??ng là 2 ho?c 3 c?t*/
+        .none-ipad {
+            display: none;
+            width: 0;
+        }
+
+        #header .bottom .center .dropdown .dropdown-menu {
+            right: -8px !important;
+        }
+
+        #header {
+            .top {
+                .left {
+                    width: 22% !important;
+                }
+
+                .right {
+                    width: 50% !important;
+                }
+            }
+
+            .bottom {
+                margin-top: -35px;
+
+                .center {
+                    .nhuongquyen {
+                        margin-left: 13em !important;
+                        margin-top: 2em !important;
+                    }
+
+                    .dropdown {
+                        margin-top: 2em !important;
+
+                        .dropdown-menu {
+                            top: 142% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        #slide {
+            .content {
+                margin-top: -14em !important;
+            }
+        }
+
+        #video {
+            .img {
+                img {
+                    height: 20em;
+                }
+            }
+        }
+
+        #video .content .Big {
+            padding-top: 18px;
+            padding-bottom: 11px;
+        }
+
+        #video .content {
+            padding-top: 8% !important;
+            padding-bottom: 8%;
+        }
+
+        #pick {
+            padding-top: 50px;
+        }
+
+        #ThanhTuu {
+            .bottom {
+                padding-left: 5em;
+
+                p {
+                    float: none !important;
+                    padding-top: 0 !important;
+                    padding-left: 0 !important;
+                }
+
+                .Big {
+                    float: none !important;
+                    margin: 0;
+                }
+
+                .border {
+                    padding-top: 0% !important;
+                }
+            }
+        }
+
+        #HuanLuyenVien {
+            .viet {
+                margin-top: -75%;
+            }
+        }
+
+        #Action {
+            .center {
+                .item {
+                    width: 50%;
+                }
+            }
+        }
+
+        #footer {
+            .left {
+                .call {
+                    padding: 5px 3px 5px 9px;
+                }
+            }
+        }
+
+        #coppyright {
+            height: 100%;
+
+            p {
+                margin: 0;
+            }
+
+            .right {
+                text-align: left;
+            }
+        }
+    }
+
+    @media (max-width:767px) {
+        /*B?t ??u t? 480 tính t??ng ?ng v?i tr??ng h?p mobile quay ngang - th??ng là 2 c?t*/
+        .none-mb {
+            display: none;
+            width: 0;
+        }
+
+        #number .item .left {
+            width: 11%;
+        }
+
+        #header {
+            .top {
+                .left {
+                    width: 100% !important;
+                    padding-left: 40px;
+                }
+
+                .center {
+                    padding-left: 5em;
+                }
+            }
+
+            .bottom {
+                .row {
+                    padding-top: 0;
+                }
+
+                margin-top: 0px;
+
+                .left {
+                    padding-left: 5em;
+                }
+
+                .center {
+                    .dropdown {
+                        margin-right: 4em;
+                    }
+
+                    .nhuongquyen {
+                        margin-left: 4em !important;
+                        margin-top: 2em !important;
+                    }
+                }
+            }
+        }
+
+        #number {
+            .item {
+                width: 100% !important;
+            }
+        }
+
+        #pick {
+            padding-top: 25px;
+
+            .item {
+                padding-left: 17%;
+
+                .right {
+                    padding-left: 70px;
+                    margin-top: 45px;
+                }
+            }
+        }
+
+        #ChuongTrinh {
+            .bottom {
+                padding-left: 28px;
+
+                .right {
+                    padding-bottom: 50px;
+                }
+
+                .left {
+                    padding-bottom: 50px;
+                }
+            }
+        }
+
+        #ThanhTuu {
+            .img {
+                img {
+                    height: 26em;
+                }
+            }
+
+            .bottom {
+                padding-left: 0;
+
+                .item {
+                    padding-left: 20%;
+                }
+            }
+        }
+
+        #HuanLuyenVien {
+            .viet {
+                margin-top: -95px;
+                    bottom: -285px;
+            }
+        }
+
+        #CamNhan {
+            .bottom {
+                .name {
+                    .right {
+                        float: none;
+                    }
+                }
+            }
+        }
+
+        #new {
+            .khungAnh {
+                max-height: 392px !important;
+            }
+        }
+
+        #HuanLuyenVien .viet {
+            margin-top: -185px;
+        }
+
+        #CamNhan .top h3 {
+            padding-bottom: 34px;
+        }
+
+        #Action {
+            .bottom {
+                .item {
+                    padding-left: 15%;
+                }
+            }
+        }
+
+        #footer {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width:479px) {
+        /*B?t ??u t? mobile, t?c css vi?t ngoài cùng là css cho tr??ng h?p mobile d?ng d?c - th??ng là 1 c?t, padding left right 15px*/
+        .none-ip {
+            display: none;
+            width: 0;
+        }
+
+        #number .item .left {
+            width: 16%;
+            padding: 7px !important;
+        }
+
+        #header {
+
+            .top {
+
+                .center {
+                    padding-left: 2em;
+                }
+            }
+
+            .bottom {
+                .center {
+                    .dropdown {
+                        margin-top: 1.5em !important;
+                    }
+                }
+            }
+        }
+
+        #slide {
+            .slick-prev {
+                display: none !important;
+            }
+
+            .slick-next {
+                display: none !important;
+            }
+
+            .hhh {
+                .img {
+                    img {
+                        height: 20em;
+                    }
+                }
+
+                .content {
+                    margin-top: -16em !important;
+                    padding-right: 46px !important;
+                }
+            }
+        }
+
+        #number .item .left {
+            padding: 10px;
+        }
+
+        #video .img img {
+            height: 26em;
+        }
+
+        #ChuongTrinh .bottom {
+            padding-left: 0;
+        }
+
+        #ThanhTuu .bottom {
+            padding-left: 0;
+        }
+
+        #new .khungAnh {
+            max-height: 212px !important;
+        }
+
+        #pick .item {
+            padding-left: 7%;
+        }
+
+        #ChuongTrinh .top .title {
+            padding: 0 30px 18px 30px;
+        }
+
+        #ChuongTrinh .top h3 {
+            font-size: 30px;
+        }
+
+        #ChuongTrinh .bottom .Big {
+            padding-top: 20%;
+        }
+        #ChuongTrinh .bottom .row{
+            margin:0;
+        }
+        #ChuongTrinh .bottom p {
+            padding: 0 9px;
+            padding-bottom: 20px;
+        }
+
+        #HuanLuyenVien .DoiNgu .top h3 {
+            padding: 10px;
+        }
+
+        #ThanhTuu .content {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #HuanLuyenVien .viet {
+            margin-top: -105px;
+        }
+
+        #HuanLuyenVien {
+            padding-bottom: 15%;
+        }
+
+        #CamNhan .top h3 {
+            padding-top: 20px;
+        }
+
+        #CamNhan {
+            padding-bottom: 60px;
+        }
+
+        #ChuongTrinh .bottom .right {
+            padding-bottom: 0;
+        }
+
+        #new .top h3 {
+            font-size: 30px;
+        }
+
+        #Action .top h3 {
+            font-size: 30px;
+        }
+
+        #new .bottom .desc {
+            padding: 30px;
+        }
+
+        #Action .bottom .item {
+            padding-left: 4%;
+        }
+
+        #new {
+            padding-top: 8%;
+            padding-bottom: 20%;
+        }
+
+        #video .content {
+            padding-top: 25% !important;
+            padding-bottom: 22%;
+        }
+
+        #footer .left, .center, .fanpage {
+            padding-bottom: 0% !important;
+        }
+
+        #newcall {
+            display: block !important;
+
+            .call {
+                background: #336b9c;
+                padding: 5px 34px 5px 9px;
+                position: absolute;
+
+                .left {
+                    float: left;
+                    padding: 0;
+                }
+
+                .right {
+                    float: left;
+
+                    p {
+                        padding-left: 10px;
+                        margin-bottom: 0;
+                    }
+
+                    .Big {
+                        padding-top: 0;
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: $write;
+                    }
+                }
+            }
+        }
+    }
+}
